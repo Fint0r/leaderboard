@@ -1,0 +1,23 @@
+Leaderboard project
+
+Run the server:
+
+    python3 manage.py runserver 0.0.0.0:8090
+
+Django debug toolbar.
+    
+    python3 -m pip install django-debug-toolbar
+    
+    
+Lehet, hogy át kell írni:
+
+    Settingsben a INTERNAL_IPS
+
+Adatmodell:
+    - name
+    - role
+    - picture
+    - points
+
+Superuser:
+    fint0r

@@ -1,17 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Leaderboard UI Design</title>
+	<title>Leaderboard</title>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
 	<section class="main-content">
 		<div class="container">
-			<h1>Top Gainers</h1>
+			<h1>SQL query:<br>{{name}} has {{points}} points.</h1>
 			<br>
 			<br>
 
@@ -23,7 +25,7 @@
 						</div>
 						<div class="leaderboard-card__body">
 							<div class="text-center">
-								<img src="img/user2.jpg" class="circle-img mb-2" alt="User Img">
+								<img src="{% static 'img/user2.jpg' %}" class="circle-img mb-2" alt="User Img">
 								<h5 class="mb-0">Sandeep Sandy</h5>
 								<p class="text-muted mb-0">@sandeep</p>
 								<hr>
@@ -42,7 +44,7 @@
 						</div>
 						<div class="leaderboard-card__body">
 							<div class="text-center">
-								<img src="img/user1.jpg" class="circle-img mb-2" alt="User Img">
+								<img src="{% static 'img/user1.jpg' %}" class="circle-img mb-2" alt="User Img">
 								<h5 class="mb-0">Kiran Acharya</h5>
 								<p class="text-muted mb-0">@kiranacharyaa</p>
 								<hr>
@@ -61,7 +63,7 @@
 						</div>
 						<div class="leaderboard-card__body">
 							<div class="text-center">
-								<img src="img/user3.jpg" class="circle-img mb-2" alt="User Img">
+								<img src="{% static 'img/user3.jpg' %}" class="circle-img mb-2" alt="User Img">
 								<h5 class="mb-0">John doe</h5>
 								<p class="text-muted mb-0">@johndoe</p>
 								<hr>
@@ -92,7 +94,7 @@
 					<tr>
 						<td>
 							<div class="d-flex align-items-center">
-								<img src="img/user1.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<img src="{% static 'img/user1.jpg' %}" class="circle-img circle-img--small mr-2" alt="User Img">
 								<div class="user-info__basic">
 									<h5 class="mb-0">Kiran Acharya</h5>
 									<p class="text-muted mb-0">@kiranacharyaa</p>
@@ -113,7 +115,7 @@
 					<tr>
 						<td>
 							<div class="d-flex align-items-center">
-								<img src="img/user2.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<img src="{% static 'img/user2.jpg' %}" class="circle-img circle-img--small mr-2" alt="User Img">
 								<div class="user-info__basic">
 									<h5 class="mb-0">Sandeep Sandy</h5>
 									<p class="text-muted mb-0">@sandeep</p>
@@ -134,7 +136,7 @@
 					<tr>
 						<td>
 							<div class="d-flex align-items-center">
-								<img src="img/user3.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<img src="{% static 'img/user3.jpg' %}" class="circle-img circle-img--small mr-2" alt="User Img">
 								<div class="user-info__basic">
 									<h5 class="mb-0">John Doe</h5>
 									<p class="text-muted mb-0">@johndoe</p>
@@ -155,7 +157,7 @@
 					<tr>
 						<td>
 							<div class="d-flex align-items-center">
-								<img src="img/user4.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<img src="{% static 'img/user4.jpg' %}" class="circle-img circle-img--small mr-2" alt="User Img">
 								<div class="user-info__basic">
 									<h5 class="mb-0">John Noakes</h5>
 									<p class="text-muted mb-0">@johnnoakes</p>
@@ -176,7 +178,7 @@
 					<tr>
 						<td>
 							<div class="d-flex align-items-center">
-								<img src="img/user5.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<img src="{% static 'img/user5.jpg' %}" class="circle-img circle-img--small mr-2" alt="User Img">
 								<div class="user-info__basic">
 									<h5 class="mb-0">Tom harry</h5>
 									<p class="text-muted mb-0">@tomharry</p>
